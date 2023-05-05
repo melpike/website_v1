@@ -24,20 +24,36 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Mel Pike — Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Red+Hat+Display:wght@400;600&display=swap" rel="stylesheet">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div id="melp-website"></div>
   </body>
+
+  <style>
+    .content-regular {
+      font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+      font-weight: 400;
+    }
+    .content-semiBold {
+      font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+      font-weight: 600;
+    }
+    html {
+      /*STYLE VARIABLES*/
+      --coco-cosmos: #511A1A;
+      --rusty-venture: #A85329;
+      --green-dream: #597F7D;
+      --creme-de-la-creme: #F4F2ED;
+
+      background: var(--creme-de-la-creme);
+    }
+    body {
+      margin: 0;
+    }
+  </style>
 </html>

@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+  <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PBVPR5TQE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3PBVPR5TQE');
+    </script>
+  <!-- Google tag (gtag.js) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
-      name="Mel Pike Software Engineer"
-      content="portfolio website"
+      name="description"
+      content="Mel Pike's Portfolio Website"
     />
 
     <title>Mel Pike — Software Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Red+Hat+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Red+Hat+Display:wght@400;600;800&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="melp-website"></div>
+
+    <script type="module"></script>
   </body>
 
   <style>
@@ -34,8 +47,6 @@
       --rusty-venture: #A85329;
       --green-dream: #597F7D;
       --creme-de-la-creme: #F4F2ED;
-
-      background: var(--creme-de-la-creme);
     }
     body {
       margin: 0;

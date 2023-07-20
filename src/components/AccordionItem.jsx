@@ -42,8 +42,9 @@ const styledAccordionItem = styled(AccordionItem)`
     height: 40px;
     justify-content: space-between;
     .experience-title {
-      font-size: 1.125rem;
-      font-weight: 800;
+      font-size: 1rem;
+      font-weight: 900;
+      text-transform: uppercase;
     }
     .arrow {
       fill: none;

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styled from '@emotion/styled';
 import Slider from './Slider';
 import { WorkCard } from './WorkHelper';
@@ -27,7 +27,7 @@ const Work = ({ className, workRef }) => {
         return () => {
           window.document.removeEventListener('keyup', handleKeyUp);
         }
-    }, [handleKeyUp]);
+    });
     
 
     const handleLeftClick = () => {
@@ -75,8 +75,8 @@ const Work = ({ className, workRef }) => {
         <h2>Recent Projects</h2>
 
         <div className="slider">
-            <button className="left" onClick={handleLeftClick}>
-                <Arrow />
+            <button className="left" aria-label="Left button for project slider" onClick={handleLeftClick}>
+                <Arrow alt="button to go right on project slider" />
             </button>
             {WorkCard.map((item, index) => 
                 (<>
@@ -92,8 +92,8 @@ const Work = ({ className, workRef }) => {
                     </div>
                 </>)
             )}
-            <button className="right" onClick={handleRightClick}>
-                <Arrow />
+            <button className="right" aria-label="Right button for project slider" onClick={handleRightClick}>
+                <Arrow alt="button to go right on project slider" />
             </button>
         </div>
 

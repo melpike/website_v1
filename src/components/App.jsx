@@ -48,7 +48,7 @@ const styledApp = styled(App)`
   text-align: center;
 
   header {
-    background: var(--creme-de-la-creme);
+    background: white;
     height: 86px;
     position: sticky;
     top: 0;
@@ -94,6 +94,10 @@ const styledApp = styled(App)`
   @media screen and (min-width: 1330px) {
     .page-content {
       max-width: 860px;
+    }
+
+    .section {
+      padding-top: 150px;
     }
 
     h1, h2, p, span {

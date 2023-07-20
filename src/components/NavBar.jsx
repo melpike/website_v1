@@ -10,18 +10,21 @@ const NavBar = ({ className, handleMenuClick }) => {
     const buttonRef = useRef(null);
     const subMenuRef = useRef(null);
     
-    const handleResize = () => {
-        setShowMobileMenu(window.innerWidth <= 768);
-    }
+    useEffect(() => {
+        const handleResize = () => {
+            setShowMobileMenu(window.innerWidth <= 768);
+        }
 
-    useEffect(() => {        
-        if(showMobileMenu) {
-            window.addEventListener('resize', handleResize);
+        window.addEventListener('resize', handleResize)
+
+        if (showMobileMenu) {
             document.addEventListener('mousedown', handleMobileMenu);
-        } else {
+        }
+
+        return function cleanupListener() {
             window.removeEventListener('resize', handleResize);
         }
-    }, [showMobileMenu]);
+    }, []);
 
     const handleMobileMenu = (event) => {
         if(event.target.parentElement !== subMenuRef.current && event.target.parentElement !== buttonRef.current) {
@@ -32,7 +35,7 @@ const NavBar = ({ className, handleMenuClick }) => {
     return (
         <div className={className}>
             <div className="logo">
-                <img src={Logo} alt="Mel Pike Logo" />
+                <img src={Logo} alt="Mel Pike Logo" width="115px" height="29px" />
             </div>
             
             <div className={isMobileSize ? "nav-items mobile" : "nav-items desktop"}>

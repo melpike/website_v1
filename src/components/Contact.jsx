@@ -29,7 +29,7 @@ const Contact = ({ className, contactRef, addFormFill }) => (
 
 const styledContact = styled(Contact)`
     .contact-content {
-        background: #C5D3D1;
+        background: #c5d3d163;
         border-radius: 4px;
         padding: 30px;
         position: relative;
@@ -41,27 +41,28 @@ const styledContact = styled(Contact)`
             justify-content: center;
             label, input, textarea, button, .submitting {
                 font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+                font-size: 1rem;
+                font-weight: 600;
             }
             label {
                 color: var(--green-dream);
-                font-size: 0.825rem;
-                font-weight: 600;
+                font-weight: 800;
                 margin-bottom: 8px;
                 text-transform: uppercase;
             }
             input, textarea {
-                background: var(--creme-de-la-creme);
+                background: white;
                 border: none;
                 border-radius: 4px;
                 color: var(--coco-cosmos);
-                font-size: 1rem;
                 margin-bottom: 20px;
                 padding: 10px;
                 width: calc(100% - 20px) !important;
                 ::placeholder {
                     color: var(--coco-cosmos);
                     font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
-                    opacity: 0.5;
+                    font-style: italic;
+                    opacity: 0.75;
                 }
             }
             textarea {
@@ -74,7 +75,6 @@ const styledContact = styled(Contact)`
                 border-radius: 4px;
                 color: white;
                 cursor: pointer;
-                font-weight: 600;
                 margin-top: 20px;
                 outline: none;
                 padding: 10px 20px;
@@ -90,19 +90,19 @@ const styledContact = styled(Contact)`
                 }
             }
             .submitting {
-                display: flex;
-                justify-content: center;
                 align-items: center;
-                color: var(--green-dream);
+                background: rgba(197, 211, 209, 0.85);
                 border-radius: 4px;
-                width: 100%;
+                color: var(--green-dream);
+                display: flex;
                 font-size: 1.25rem;
                 font-weight: 600;
                 height: 100%;
+                justify-content: center;
+                left: 0;
                 position: absolute;
                 top: 0;
-                left: 0;
-                background: rgba(197, 211, 209, 0.85);
+                width: 100%;
                 z-index: 10;
             }
         }

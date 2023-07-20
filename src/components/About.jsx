@@ -9,10 +9,10 @@ const About = ({ className, aboutRef }) => {
             <h2>More About Me</h2>
             <div className="about-content">
                 <img src={myPic} alt="" />
-                <p>Hello, my name is Mel. After years of working as a graphic designer, I fell in love with web development. Through a lot of online courses, hands-on learning, and copious amounts of googling I was fortunate enough to professionally transition from a designer to web developer and eventually to software&nbsp;engineer.
+                <p>Hello, my name is Mel. After years of working as a graphic designer, I found my calling and fell in love with software engineering. That journey from designer to software engineer involved research, time, dedication, and curating my own curriculum for learning since I did not come from a Computer Science background. Through the process of online learning and the hands-on experience I gained the understanding that continuted education is paramount to success and moving forward in my career.
                     <br />
                     <br />
-                    I’ve worked on various user centric projects from website pages to reusable react components to in&#8209;app new user journeys to integrating third&#8209;party&nbsp;tools.
+                    I’ve worked on various user centric projects from website pages to reusable React components to in&#8209;app new user journeys to integrating third&#8209;party&nbsp;tools. I'm seeking my next role to be a part of a collaborative team environment that fosters communication, trust, and continuous learning.
                 </p>
             </div>
         </div>
@@ -30,6 +30,7 @@ const styledAbout = styled(About)`
 
     @media screen and (min-width: 1330px) {
         .about-content {
+            align-items: center;
             display: flex;
             
             p {

@@ -22,7 +22,6 @@ const Form = () => {
             email: emailRef.current.value,
             message: messageRef.current.value,
         };
-        console.log(newForm);
         handleSubmit(newForm);
         setIsSubmitting(true);
         setTimeout(() => {

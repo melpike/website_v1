@@ -24,7 +24,7 @@ const NavBar = ({ className, handleMenuClick }) => {
         return function cleanupListener() {
             window.removeEventListener('resize', handleResize);
         }
-    }, []);
+    }, [showMobileMenu]);
 
     const handleMobileMenu = (event) => {
         if(event.target.parentElement !== subMenuRef.current && event.target.parentElement !== buttonRef.current) {

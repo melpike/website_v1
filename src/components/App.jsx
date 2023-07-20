@@ -23,6 +23,8 @@ const App = ({className}) => {
         return workRef.current.scrollIntoView({ behavior: 'smooth' });
       case 'contactRef':
         return contactRef.current.scrollIntoView({ behavior: 'smooth' });
+      default:
+        return aboutRef.current.scrollIntoView({ behavior: 'smooth' });
     }
 }
 

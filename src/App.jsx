@@ -6,36 +6,8 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Work from './components/Work';
 import Contact from './components/Contact';
-import './index.css';
-import base from '../base';
 
 const App = ({className}, props) => {
-  // const [getPage, setGetPage] = useState('');
-  const storeId = props.match.params.storeId;
-    const localStorageRef = localStorage.getItem(storeId);
-
-    console.log(storeId);
-    console.log(localStorageRef);
-
-    // const [fishes, setFishes] = useState({});
-    // const [order, setOrder] = useState(JSON.parse(localStorageRef) || {})
-
-    // useEffect(() => {
-    //     if (localStorageRef) {
-    //         setOrder(JSON.parse(localStorageRef));
-    //     }
-    //     const ref = base.syncState(`${storeId}/fishes`, {
-    //         context: {
-    //           setState: ({ fishes }) => setFishes({ ...fishes }),
-    //         },
-    //         state: 'fishes'
-    //       })
-      
-    //       return () => {
-    //         base.removeBinding(ref);
-    //       }
-    //   }, []);
-
   const aboutRef = useRef();
   const experienceRef = useRef();
   const workRef = useRef();
@@ -52,17 +24,6 @@ const App = ({className}, props) => {
       case 'contactRef':
         return contactRef.current.scrollIntoView({ behavior: 'smooth' });
     }
-    console.log(`${getPage}`);
-    // {getPage && `${getPage}`.current.scrollIntoView({ behavior: 'smooth' })}
-    // getPage.current.scrollIntoView({ behavior: 'smooth' })
-}
-
-const addFormFill = (newForm) => {
-  // const addFishes = { ...fishes, [`fish${Date.now()}`]: fish };
-  // setFishes(addFishes);
-  // base.post(`${storeId}/fishes`, {
-  //     data: addFishes
-  // });
 }
 
   return (<>

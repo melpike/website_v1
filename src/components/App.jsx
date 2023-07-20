@@ -6,7 +6,6 @@ import About from './About';
 import Experience from './Experience';
 import Work from './Work';
 import Contact from './Contact';
-import '../index.css';
 
 const App = ({className}) => {
   const aboutRef = useRef();

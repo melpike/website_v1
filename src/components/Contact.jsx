@@ -14,7 +14,7 @@ const Contact = ({ className, contactRef, addFormFill }) => (
         </div>
 
         <div className="socials">
-            <div className="linkedin" onClick={() => window.open('https://www.linkedin.com/in/melp18/','_blank')}>
+            <div className="linkedin" onClick={() => window.open('https://www.linkedin.com/in/melpike/','_blank')}>
                 <LinkedinIcon />
             </div>
             <div className="github" onClick={() => window.open('https://github.com/melpike','_blank')}>

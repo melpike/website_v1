@@ -1,5 +1,19 @@
 export const Employment = [
     {
+        startDate: "August 2023",
+        endDate: "Present",
+        company: "Elexity",
+        position: "UI/UX Designer and Developer",
+        details: {
+            se_0: "Collaborated with the executive and backend engineering teams to design and develop a new web platform using React.js and Figma. Crafted and continuously improved the user journey and experience.",
+            se_1: "Took on a leadership role in reimagining, redesigning, and developing the user’s journey and experience through the web platform.",
+            se_2: "Developed the front end of the web platform including displaying and generating complex, live data for multiple accounts via APIs.",
+            se_3: "Implemented user surveys to generate data to inform future design and feature additions.",
+            se_4: "Refactored 10+ existing React components to incorporate modern practices, including utilizing React hooks.",
+        },
+    },
+
+    {
         startDate: "August 2022",
         endDate: "June 2023",
         company: "BombBomb",
@@ -55,6 +69,6 @@ export const Skills = [
 
     {
         title: "Other",
-        list: "Docker, Firebase, Github, Postgres, Postman, Regex, SQL" 
+        list: "Docker, Firebase, Github, Postgres, Postman, Regex, SQL, Figma, Storybook" 
     }
 ]
